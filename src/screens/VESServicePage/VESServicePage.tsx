@@ -25,6 +25,7 @@ import { HeaderSection } from "../VESHomePage/sections/HeaderSection/HeaderSecti
 import { FooterSection } from "../VESHomePage/sections/FooterSection/FooterSection";
 import { CaseStudySection } from "../VESHomePage/sections/CaseStudySection/CaseStudySection";
 import { ProcessSection } from "../VESHomePage/sections/ProcessSection/ProcessSection";
+import { TestimonialSection } from "../VESHomePage/sections/TestimonialSection";
 // Using Tailwind for styling instead of shadcn/ui components
 
 
@@ -723,10 +724,11 @@ export const VESServicePage = () => {
             <HeroSection />
             <ServicesSection onServiceClick={handleServiceClick} />
             <AnimatedSection delay={200}>
-              <ProcessSection />
-            </AnimatedSection>
-            <AnimatedSection delay={400}>
-              <CaseStudySection />
+              {/* <ProcessSection /> */}
+            {/* </AnimatedSection>
+            <AnimatedSection delay={400}> */}
+              {/* <CaseStudySection /> */}
+              <TestimonialSection />
             </AnimatedSection>
             <FooterSection />
           </div>
